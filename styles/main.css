@@ -25,10 +25,8 @@ li {
 
 .octodex {
     margin: auto;
-    height: 1000px;
-    width: 1500px;
+    width: 70vw;
     position: relative;
-    border: 2px solid;
 }
 
 .octocat {
@@ -36,7 +34,6 @@ li {
     float: left;
     width: 400px;
     margin: 10px;
-    border: 1px red;
     text-align: center;
 }
 

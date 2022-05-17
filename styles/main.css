@@ -3,6 +3,8 @@
     --medium-grey: #6C6C6C;
     --dark-grey: #2D2D2D;
     --small-image-size: 30px;
+    --gap-size: 10px;
+    --arrow-height: calc(var(--gap-size) * 0.8);
 }
 
 *, :before, :after {
@@ -34,18 +36,30 @@ li {
     float: left;
     width: 400px;
     margin: 10px;
+    border: 1px red;
+    text-align: center;
 }
 
 .octocat > a > img {
-    width: 400px;
+    width: 99%;
     border: 1px solid var(--light-grey);
     border-radius: 3px;
-    vertical-align: bottom; 
+    vertical-align: bottom;
+    margin-right: 5px; 
+}
+
+.image-footer:before {
+    content: '';
+    position: absolute;
+    right: calc((var(--small-image-size) / 2) - var(--arrow-height));
+    border-left: var(--arrow-height) solid transparent;
+    border-right: var(--arrow-height) solid transparent;
+    border-top: var(--arrow-height) solid var(--light-grey);
 }
 
 .image-footer {
     position: relative;
-    height: calc(var(--small-image-size) + 20px);
+    height: calc(var(--small-image-size) + 2 * var(--gap-size));
     border-bottom: 1px solid var(--light-grey);
 }
 
@@ -91,6 +105,8 @@ li {
 .authors img {
     width: var(--small-image-size);
     border-radius: 5px;
-    margin-left: 4px;
 }
 
+.authors img :not(:last-child) {
+    margin-right: 4px;
+}

@@ -1,0 +1,95 @@
+:root {
+    --light-grey: #C3C3C3;
+    --medium-grey: #6C6C6C;
+    --dark-grey: #2D2D2D;
+    --small-image-size: 30px;
+}
+
+*, :before, :after {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: helvetica, sans-serif;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    color: var(--dark-grey);
+}
+
+li {
+    list-style-type: none;
+}
+
+.octodex {
+    margin: auto;
+    height: 1000px;
+    width: 1500px;
+    position: relative;
+    border: 2px solid;
+}
+
+.octocat {
+    position: relative;
+    float: left;
+    width: 400px;
+    margin: 10px;
+}
+
+.octocat > a > img {
+    width: 400px;
+    border: 1px solid var(--light-grey);
+    border-radius: 3px; 
+}
+
+.image-footer {
+    position: relative;
+    height: calc(var(--small-image-size) + 20px);
+    border-bottom: 1px solid var(--light-grey);
+}
+
+.image-footer > * {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.image-number {
+    color: var(--light-grey);
+    left: 0;
+}
+
+.image-number:before {
+    content: '#';
+}
+
+.image-caption span {
+    color: var(--medium-grey);
+}
+
+.image-caption {
+    right: 0;
+    height: var(--small-image-size);
+}
+
+.image-caption * {
+    float: left;
+}
+
+.image-caption > span, .image-caption > a {
+    position: relative;
+    margin-right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.authors {
+    padding: 0;
+}
+
+.authors img {
+    width: var(--small-image-size);
+    border-radius: 5px;
+    margin-left: 4px;
+}
+

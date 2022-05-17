@@ -24,9 +24,10 @@ li {
 }
 
 .octodex {
-    margin: auto;
-    width: 90vw;
     position: relative;
+    margin: 0 auto;
+    width: 90vw;
+    text-align: center;
 }
 
 .octocat {
@@ -47,8 +48,8 @@ li {
 }
 
 .image-footer:before {
-    content: '';
     position: absolute;
+    content: '';
     right: calc((var(--small-image-size) / 2) - var(--arrow-height));
     border-left: var(--arrow-height) solid transparent;
     border-right: var(--arrow-height) solid transparent;
@@ -76,10 +77,6 @@ li {
     content: '#';
 }
 
-.image-caption span {
-    color: var(--medium-grey);
-}
-
 .image-caption {
     right: 0;
     height: var(--small-image-size);
@@ -87,6 +84,10 @@ li {
 
 .image-caption * {
     float: left;
+}
+
+.image-caption span {
+    color: var(--medium-grey);
 }
 
 .image-caption > span, .image-caption > a {

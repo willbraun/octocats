@@ -25,14 +25,15 @@ li {
 
 .octodex {
     margin: auto;
-    width: 70vw;
+    width: 90vw;
     position: relative;
 }
 
 .octocat {
     position: relative;
     float: left;
-    width: 400px;
+    min-width: 300px;
+    width: 20vw;
     margin: 10px;
     text-align: center;
 }

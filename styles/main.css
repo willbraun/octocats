@@ -39,7 +39,8 @@ li {
 .octocat > a > img {
     width: 400px;
     border: 1px solid var(--light-grey);
-    border-radius: 3px; 
+    border-radius: 3px;
+    vertical-align: bottom; 
 }
 
 .image-footer {

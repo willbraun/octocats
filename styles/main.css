@@ -31,8 +31,7 @@ li {
 }
 
 .octocat {
-    position: relative;
-    float: left;
+    display: inline-block;
     min-width: 300px;
     width: 20vw;
     margin: 10px;
